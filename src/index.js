@@ -6,7 +6,7 @@ app.use(cors());
 
 const port = 3000;
 let microserviceName = "microservice-model"
-let ambiente = process.env.AMVBIENTE || "local"
+let ambiente = process.env.AMBIENTE || "local"
 
 springCloudConfigClient.load({
     endpoint: 'https://scc-dev.dataseed.de:443',
